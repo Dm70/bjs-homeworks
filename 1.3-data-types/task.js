@@ -35,7 +35,7 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
 function getGreeting(name) {
     // код для задачи №2 писать здесь
 	if (!name || name === '') {
-		name = 'Anonymous';
+		name = 'Аноним';
 	}
 	let greeting;
 	greeting = `Привет Мир! Меня зовут ${name}!`;
