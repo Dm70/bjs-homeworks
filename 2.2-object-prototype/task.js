@@ -1,4 +1,5 @@
 'use strict'
+// Задача 2.2.1
 //String.prototype.isPalindrome - для задачи №1
 String.prototype.isPalindrome = function() {
 	let newString = this.toLowerCase().split('').filter(element => element != ' ').join('');
@@ -6,7 +7,7 @@ String.prototype.isPalindrome = function() {
 	return newString === reverseString;
 };
 
-// Задача 2.2.1
+// Задача 2.2.2
 function getAverageMark(marks) {
     // код для задачи №2 писать здесь
 	let sumMarks = 0;           // Сумма всех оценок
