@@ -2,8 +2,11 @@
 // Задача 2.2.1
 //String.prototype.isPalindrome - для задачи №1
 String.prototype.isPalindrome = function() {
-	let newString = this.toLowerCase().split('').filter(element => element != ' ').join('');
-	let reverseString = newString.split('').reverse().join('');
+	// const newString = this.toLowerCase().split('').filter(element => element != ' ').join('');
+	// На основе замечаний преподавателя Нуруллина Эд. let в этой задаче заменил на const.
+	// Вместо метода filter() применил метод replace(/\s/g, ‘’). Действительно. это намного лучше.
+	const newString = this.toLowerCase().replace(/\s/g, '');
+	const reverseString = newString.split('').reverse().join('');
 	return newString === reverseString;
 };
 
